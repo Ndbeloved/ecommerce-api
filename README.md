@@ -58,7 +58,6 @@ This project is a high-performance RESTful API built with Node.js and Express, d
 4. Start the development server:
 
     ```bash
-    Copy code
     npm run dev
 
 5. Test the API in your browser or API testing tool (e.g., Postman):
