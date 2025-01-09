@@ -10,11 +10,16 @@ const cartSchema = new Schema({
     },
     items: [
         {
+            productId: {type: String, required: [true, "Product id is required"]},
             product: {type: String, required: [true, "product name is required"]},
             quantity: {type: Number, required: [true, "Product quantity is required"]},
             price: { type: Number, required: [true, "Product price is required"]}
         }
-    ]
+    ],
+    total: {
+        type: Number,
+        default: 0,
+    }
 })
 
 const CartModel = model('Cart', cartSchema)
