@@ -1,5 +1,5 @@
 import { isRedisDisonnected } from "../config/redisConfig.js"
-import { Cache } from "../services/getCachedData.js"
+import { Cache } from "../services/GetCachedData.js"
 
 
 function redisCacheMiddleware(cacheKey){

@@ -1,0 +1,85 @@
+###
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "first_name": "Beloved",
+    "last_name": "Erastus",
+    "email": "james4@gmail.com",
+    "password": "40500020"
+}
+
+###
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "james4@gmail.com",
+    "password": "40500020"
+}
+
+###
+GET http://localhost:3000/api/auth/tests
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2MyZmM5NGQyNTI3OWZlZGU4YTg1YiIsImVtYWlsIjoiamFtZXNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJCZWxvdmVkIEVyYXN0dXMiLCJpYXQiOjE3MzYxOTMzNjQsImV4cCI6MTczNjE5Njk2NH0.78ldrwVwC2sbsoq5MvHZfbPyubwA8cVFcrg6pckSSjA
+
+
+###
+GET http://localhost:3000/api/products
+Content-Type: application/json
+
+
+###
+GET http://localhost:3000/api/products/677e4468608a9c93fff02946
+Content-Type: application/json
+
+
+
+###
+PUT http://localhost:3000/api/products/677e4468608a9c93fff02946
+Content-Type: application/json
+
+{
+    "quantityStock": 40
+}
+
+
+###
+DELETE http://localhost:3000/api/products/677e5d3400e359292bce4a9c
+Content-Type: application/json
+
+
+
+###
+GET http://localhost:3000/api/cart
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2ZhNWFmNjQzODUxNzVmOTdkNzJmOSIsImVtYWlsIjoiamFtZXM0QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiQmVsb3ZlZCBFcmFzdHVzIiwiaWF0IjoxNzM2NDE4NzQ4LCJleHAiOjE3MzY0MjIzNDh9.7cm5tZF-86UB_kAsl6jRakbXdYiD8rrI5wm-8BEYFJY
+
+
+
+###
+POST http://localhost:3000/api/cart
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2ZhNWFmNjQzODUxNzVmOTdkNzJmOSIsImVtYWlsIjoiamFtZXM0QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiQmVsb3ZlZCBFcmFzdHVzIiwiaWF0IjoxNzM2NDI2ODU2LCJleHAiOjE3MzY0MzA0NTZ9.cofGiYkX68nf6Py9QMEX0d1urPdAWaAiEb3ld1o9laY
+
+{
+    "products": [{"productId": "677e8280724f050c5ddf19b5", "quantity": 3}, {"productId": "677e8353c75f008bb1333194", "quantity": 6}] 
+}
+
+
+
+###
+DELETE  http://localhost:3000/api/cart/677e8353c75f008bb1333194
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2ZhNWFmNjQzODUxNzVmOTdkNzJmOSIsImVtYWlsIjoiamFtZXM0QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiQmVsb3ZlZCBFcmFzdHVzIiwiaWF0IjoxNzM2NDI2ODU2LCJleHAiOjE3MzY0MzA0NTZ9.cofGiYkX68nf6Py9QMEX0d1urPdAWaAiEb3ld1o9laY
+
+
+
+###
+PUT  http://localhost:3000/api/cart/677e8353c75f008bb1333194
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2ZhNWFmNjQzODUxNzVmOTdkNzJmOSIsImVtYWlsIjoiamFtZXM0QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiQmVsb3ZlZCBFcmFzdHVzIiwiaWF0IjoxNzM2NDI2ODU2LCJleHAiOjE3MzY0MzA0NTZ9.cofGiYkX68nf6Py9QMEX0d1urPdAWaAiEb3ld1o9laY
+
+{
+    "quantity": 2
+}

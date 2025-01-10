@@ -1,6 +1,6 @@
 import { isRedisDisonnected, redisClient } from "../config/redisConfig.js"
 import { ProductModel } from "../models/productModel.js"
-import { Cache } from "../services/getCachedData.js"
+import { Cache } from "../services/GetCachedData.js"
 import { ProductService } from "../services/ProductServices.js"
 import { uploadToCloudinary } from "../services/uploadCloudinary.js"
 import { AppError } from "../utils/errorHandler.js"
